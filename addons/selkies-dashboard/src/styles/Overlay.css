@@ -19,16 +19,16 @@
        toggle, an error row) are lighter again. Accent as text is therefore a
        separate, lighter tint of the same hue — the fill color is too dark
        against those surfaces at label sizes. */
-    --accent: #ec4899;
-    --accent-strong: #f472b6;
-    --accent-text: #f9a8d4;
-    --accent-text-strong: #fbc0de;
-    --accent-soft: rgba(236, 72, 153, 0.14);
-    --accent-border: rgba(236, 72, 153, 0.45);
+    --accent: #d4a017;
+    --accent-strong: #e8c15a;
+    --accent-text: #f0d48a;
+    --accent-text-strong: #f8e7b4;
+    --accent-soft: rgba(212, 160, 23, 0.18);
+    --accent-border: rgba(232, 193, 90, 0.55);
     --violet: #c3b1f7;
     --violet-strong: #cdc0fa;
-    --wordmark-from: #f4a6cf;
-    --wordmark-to: #c3b1f7;
+    --wordmark-from: #f0d48a;
+    --wordmark-to: #c4922a;
     --bg: #12161d;
     --surface: #181d26;
     --surface-alt: #1f2530;
@@ -56,9 +56,9 @@
     --input-bg: var(--surface-inset);
     --input-text: var(--text);
     --input-border: var(--border-strong);
-    /* A filled button carries near-black text, so its pink is lighter again
+    /* A filled button carries near-black text, so its gold is lighter again
        than the accent that only has to sit on a dark surface. */
-    --button-bg: #f795ca;
+    --button-bg: #e6c15a;
     --button-text: #12161d;
     --button-hover-bg: var(--accent-text);
     --link-color: var(--violet);
@@ -104,16 +104,16 @@
 .theme-light {
     /* On a light surface the accent has to go the other way to carry text, so
        --accent-text is darker than the fill rather than lighter. */
-    --accent: #a82a69;
-    --accent-strong: #8f2359;
+    --accent: #8a6412;
+    --accent-strong: #6d4e0c;
     --accent-text: var(--accent);
     --accent-text-strong: var(--accent-strong);
-    --accent-soft: rgba(168, 42, 105, 0.1);
-    --accent-border: rgba(168, 42, 105, 0.4);
+    --accent-soft: rgba(138, 100, 18, 0.12);
+    --accent-border: rgba(138, 100, 18, 0.45);
     --violet: #5b4ba3;
     --violet-strong: #4a3c87;
-    --wordmark-from: #b93a82;
-    --wordmark-to: #7b52b0;
+    --wordmark-from: #8a6412;
+    --wordmark-to: #c4a035;
     --bg: #f4f5f8;
     --surface: #ffffff;
     --surface-alt: #f6f7f9;
@@ -223,7 +223,7 @@
     gap: 8px;
     margin-bottom: 16px;
     padding-bottom: 14px;
-    border-bottom: 1px solid var(--sidebar-border);
+    border-bottom: 2px solid var(--accent);
 }
 
 .netcore-brand {
@@ -715,7 +715,7 @@
    validator: lightness band, chroma floor, CVD and normal-vision separation,
    3:1 against the section panel); status colors pair with an icon shape. */
 .stream-stats {
-    --stat-series-1: #ec4899;
+    --stat-series-1: #d4a017;
     --stat-series-2: #9085e9;
     --stat-good: #0ca30c;
     --stat-warn: #fab219;
@@ -728,7 +728,7 @@
     font-variant-numeric: tabular-nums;
 }
 .theme-light .stream-stats {
-    --stat-series-1: #a82a69;
+    --stat-series-1: #8a6412;
     --stat-series-2: #5b4ba3;
     --stat-good: #0a7d0a;
     --stat-warn: #9a6400;

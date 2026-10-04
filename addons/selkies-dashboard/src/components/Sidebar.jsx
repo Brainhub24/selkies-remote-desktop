@@ -2955,12 +2955,12 @@ function Sidebar() {
               href="https://netcore.digital/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={uiTitle}
               onClick={openNetcore}
             >
               {uiShowLogo && (
-                <img src="netcore-logo.jpg" alt="NETCORE logo" />
+                <img src="netcore-logo.jpg" alt="" />
               )}
-              <h2>{uiTitle}</h2>
             </a>
             <div className="header-controls">
             <div
